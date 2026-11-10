@@ -1,0 +1,19 @@
+{
+  "benchmark": "MMMU-Pro",
+  "metric": "accuracy",
+  "metric_display": "EM",
+  "unit": "percent",
+  "median": 81.6,
+  "tolerance": 3.0,
+  "range": [
+    78.6,
+    84.6
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "section": "Evaluation Results / Vision",
+    "setting": "reasoning effort=max, temperature=1.0, top_p=0.95, without tool augmentation (81.6); with Python tools reports 83.4"
+  },
+  "notes": "官方卡片 MMMU-Pro 报告 81.6 / 83.4（不带工具 / 带 Python 工具），本地 AISBench 无工具增强，基线取 81.6。本地使用 MMMU-Pro 标准 10 选项任务（mmmu_pro_options10_gen）0-shot 推理，卡片未给出 shot 数，故 tolerance 放宽至 ±3.0 个百分点，作为参考目标。"
+}

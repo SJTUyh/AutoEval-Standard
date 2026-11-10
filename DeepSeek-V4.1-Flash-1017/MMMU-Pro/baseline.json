@@ -1,0 +1,20 @@
+{
+  "benchmark": "MMMU-Pro",
+  "metric": "accuracy",
+  "metric_display": "EM",
+  "unit": "percent",
+  "median": 56.5,
+  "tolerance": 3.0,
+  "range": [
+    53.5,
+    59.5
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "section": "Evaluation Results / Base Model / Multimodal",
+    "setting": "4-shot, EM"
+  },
+  "inherited_from": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "notes": "DeepSeek-V4.1-Flash-1017 模型卡未报告 MMMU-Pro，基线沿用 DeepSeek-V4.1-Flash 卡片值 56.5（Base Model、4-shot），该值仅作参考目标。本地使用 MMMU-Pro 标准 10 选项任务（mmmu_pro_options10_gen）0-shot 推理，设置与官方不完全一致，故 tolerance 放宽至 ±3.0 个百分点。"
+}

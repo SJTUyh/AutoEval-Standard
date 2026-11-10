@@ -1,0 +1,19 @@
+{
+  "benchmark": "DeepSWE v1.1",
+  "metric": "resolved_rate",
+  "metric_display": "Resolved",
+  "unit": "percent",
+  "median": 67.3,
+  "tolerance": 2.0,
+  "range": [
+    65.3,
+    69.3
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "section": "Evaluation Results / Coding / DeepSWE footnote",
+    "setting": "mini-SWE-agent harness, reasoning effort=max, temperature=1.0, top_p=1.0, 1M-token context, DeepSWE v1.1 tasks"
+  },
+  "notes": "官方表格 DeepSWE = 67.5，使用 Kimi Code 脚手架；脚注同时给出 mini-SWE-agent 脚手架下为 67.3（官方 leaderboard 口径），本地使用 AISBench 的 mini-swe-agent，故基线取 67.3。卡片未给出 DeepSWE 采样次数与最大步数，本地按单次尝试（n_attempts=1）执行。tolerance 取 ±2.0 个百分点。"
+}

@@ -1,0 +1,19 @@
+{
+  "benchmark": "GPQA Diamond",
+  "metric": "accuracy",
+  "metric_display": "Pass@1",
+  "unit": "percent",
+  "median": 93.5,
+  "tolerance": 2.0,
+  "range": [
+    91.5,
+    95.5
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "section": "Evaluation Results / Reasoning & Knowledge",
+    "setting": "reasoning effort=max, temperature=1.0, top_p=0.95 (single-step task)"
+  },
+  "notes": "官方卡片 GPQA Diamond = 93.5（最大推理强度、单步任务 top_p=0.95）。本地使用 AISBench 0-shot CoT 对话模板（gpqa_gen_0_shot_cot_chat_prompt）。tolerance 取 ±2.0 个百分点。"
+}

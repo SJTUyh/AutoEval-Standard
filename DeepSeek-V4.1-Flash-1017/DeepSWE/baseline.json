@@ -1,0 +1,19 @@
+{
+  "benchmark": "DeepSWE v1.1",
+  "metric": "resolved_rate",
+  "metric_display": "Resolved",
+  "unit": "percent",
+  "median": 77.0,
+  "tolerance": 3.0,
+  "range": [
+    74.0,
+    80.0
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "section": "Introduction / Benchmark comparison",
+    "setting": "Mini-SWE-V2 harness, reasoning effort=max, 1M-token context, max_tokens>=256K, DeepSWE v1.1 tasks"
+  },
+  "notes": "官方卡片 DeepSWE v1.1 = 77.0（Mini-SWE-V2 脚手架；同表 DS-V4.1-Flash 为 74.2）。本地使用 AISBench 的 mini-swe-agent，与 Mini-SWE-V2 可能存在版本差异，tolerance 取 ±3.0 个百分点。卡片未给出该版本 DeepSWE 的采样次数与最大步数，沿用上一版脚手架的 n_attempts=1 / step_limit=500，按实际 Harbor Agent 版本核对。"
+}

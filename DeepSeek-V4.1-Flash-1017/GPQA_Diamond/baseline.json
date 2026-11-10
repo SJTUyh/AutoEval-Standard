@@ -1,0 +1,20 @@
+{
+  "benchmark": "GPQA Diamond",
+  "metric": "accuracy",
+  "metric_display": "Pass@1",
+  "unit": "percent",
+  "median": 90.9,
+  "tolerance": 2.0,
+  "range": [
+    88.9,
+    92.9
+  ],
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "section": "Evaluation Results / Instruct Model / Comparison with frontier models",
+    "setting": "max reasoning effort (reasoning_effort=100), temperature=1.0, top_p=0.95"
+  },
+  "inherited_from": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "notes": "DeepSeek-V4.1-Flash-1017 模型卡未报告 GPQA Diamond，基线沿用 DeepSeek-V4.1-Flash 卡片值 90.9，测评协议同步保持（最大推理强度、temperature=1.0、top_p=0.95）。本地使用 AISBench 0-shot CoT 对话模板（gpqa_gen_0_shot_cot_chat_prompt）。tolerance 取 ±2.0 个百分点。"
+}
