@@ -9,7 +9,7 @@
     "generation_kwargs": {
       "temperature": 1.0,
       "top_p": 0.95,
-      "reasoning_effort": 100
+      "reasoning_effort": "max"
     },
     "max_out_len": 262144
   }
