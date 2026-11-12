@@ -1,0 +1,16 @@
+{
+  "tool": "ais_bench",
+  "subcommand": "llm_accuracy",
+  "params": {
+    "model_type": "vllm_api_general_chat",
+    "datasets": [
+      "mmmu_pro_options10_gen"
+    ],
+    "generation_kwargs": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "reasoning_effort": "max"
+    },
+    "max_out_len": 262144
+  }
+}

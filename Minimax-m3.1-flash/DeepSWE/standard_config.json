@@ -1,0 +1,25 @@
+{
+  "tool": "ais_bench",
+  "subcommand": "harbor_agent",
+  "params": {
+    "agent_name": "mini-swe-agent",
+    "agent_kwargs": {
+      "reasoning_effort": "max"
+    },
+    "llm_kwargs": {
+      "max_tokens": 262144,
+      "temperature": 1.0,
+      "top_p": 1.0
+    },
+    "model_info": {
+      "max_input_tokens": 1048576,
+      "max_output_tokens": 262144,
+      "input_cost_per_token": 0.0,
+      "output_cost_per_token": 0.0
+    },
+    "path": "/data/deep-swe/tasks",
+    "dataset_abbr": "harbor_deepswe-v1.1",
+    "n_attempts": 1,
+    "environment_type": "docker"
+  }
+}
