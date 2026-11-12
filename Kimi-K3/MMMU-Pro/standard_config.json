@@ -4,7 +4,7 @@
   "params": {
     "model_type": "vllm_api_general_chat",
     "datasets": [
-      "mmmu_pro_options10_gen"
+      "mmmu_pro_options10_base64_gen"
     ],
     "generation_kwargs": {
       "temperature": 1.0,

@@ -21,7 +21,7 @@
     },
     "path": "/data/deep-swe/tasks",
     "dataset_abbr": "harbor_deepswe-v1.1",
-    "n_attempts": 8,
+    "n_attempts": 1,
     "environment_type": "docker"
   }
 }
