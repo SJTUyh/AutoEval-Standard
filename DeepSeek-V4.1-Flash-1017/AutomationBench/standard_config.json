@@ -1,0 +1,22 @@
+{
+  "tool": "ais_bench",
+  "subcommand": "harbor_agent",
+  "params": {
+    "agent_import_path": "automationbench_adapter.agent:AutomationBenchOfficialAgent",
+    "agent_kwargs": {
+      "sampling_args": {
+        "reasoning_effort": "max",
+        "thinking": {
+          "type": "enabled"
+        },
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "pricing": null
+    },
+    "dataset_abbr": "automationbench",
+    "n_attempts": 1,
+    "max_retries": 0,
+    "environment_type": "docker"
+  }
+}

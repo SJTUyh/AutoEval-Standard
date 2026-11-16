@@ -1,0 +1,34 @@
+{
+  "tool": "ais_bench",
+  "subcommand": "harbor_agent",
+  "params": {
+    "agent_import_path": "automationbench_adapter.agent:AutomationBenchOfficialAgent",
+    "agent_kwargs": {
+      "base_url": "https://api.deepseek.com/v1",
+      "sampling_args": {
+        "max_tokens": 65536,
+        "reasoning_effort": "max",
+        "thinking": {
+          "type": "enabled"
+        },
+        "temperature": 1.0,
+        "top_p": 1.0
+      },
+      "pricing": null
+    },
+    "model_names": [
+      "deepseek-flash"
+    ],
+    "api_base": "https://api.deepseek.com/v1",
+    "dataset_abbr": "automationbench",
+    "path": "/acceptance/tasks",
+    "ais_bench_root": "/benchmark",
+    "work_dir": "/work/autoeval/automationbench",
+    "n_attempts": 1,
+    "n_concurrent_trials": 1,
+    "max_num_workers": 1,
+    "max_retries": 0,
+    "environment_type": "docker",
+    "environment_delete": true
+  }
+}
