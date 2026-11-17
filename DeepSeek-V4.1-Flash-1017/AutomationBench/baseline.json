@@ -1,0 +1,16 @@
+{
+  "benchmark": "Automation-Bench v1.0.6",
+  "metric": "pass_rate",
+  "metric_display": "Pass@1",
+  "unit": "percent",
+  "median": 60.5,
+  "tolerance": null,
+  "range": null,
+  "source": {
+    "type": "model_card",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+    "section": "Introduction / Benchmark comparison",
+    "setting": "Automation-Bench v1.0.6，DS-V4.1-Flash-1017 = 60.5；模型卡未完整披露样本范围、脚手架和采样条件。"
+  },
+  "notes": "60.5 仅作为官方模型卡参考成绩保留，不是本次公共单样本、1 attempt、并发 1 的通过阈值。tolerance 和 range 保持空值，不计算基准差值，不作严格可比或正式发布判定。公共任务来源为 https://github.com/zapier/AutomationBench ，本次固定上游提交 4a8e1061254004d9dac807054eed33fad7d1ff14。"
+}
