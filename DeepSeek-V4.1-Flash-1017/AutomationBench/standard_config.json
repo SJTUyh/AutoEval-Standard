@@ -5,6 +5,7 @@
     "agent_import_path": "automationbench_adapter.agent:AutomationBenchOfficialAgent",
     "agent_kwargs": {
       "sampling_args": {
+        "max_tokens": 65536,
         "reasoning_effort": "max",
         "thinking": {
           "type": "enabled"
