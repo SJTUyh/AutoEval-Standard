@@ -4,7 +4,20 @@
   "params": {
     "agent_name": "mini-swe-agent",
     "agent_kwargs": {
-      "runtime_constraints": "deepseek-v4.1-flash+deepswe"
+      "runtime_constraints": "deepseek-v4.1-flash+deepswe",
+      "config": {
+        "agent": {
+          "step_limit": 500
+        },
+        "model": {
+          "model_class": "litellm",
+          "model_kwargs": {
+            "temperature": 1.0,
+            "top_p": 0.95,
+            "reasoning_effort": "max"
+          }
+        }
+      }
     },
     "llm_kwargs": {
       "max_tokens": 384000
@@ -18,10 +31,6 @@
     "path": "/data/deep-swe/tasks",
     "dataset_abbr": "harbor_deepswe-v1.1",
     "n_attempts": 1,
-    "environment_type": "docker",
-    "extra_cli_args": [
-      "--ak",
-      "config={\"agent\":{\"step_limit\":500},\"model\":{\"model_class\":\"litellm\",\"model_kwargs\":{\"temperature\":1.0,\"top_p\":0.95,\"reasoning_effort\":\"max\"}}}"
-    ]
+    "environment_type": "docker"
   }
 }
