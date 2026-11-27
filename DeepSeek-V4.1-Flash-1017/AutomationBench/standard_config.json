@@ -13,7 +13,8 @@
         "temperature": 1.0,
         "top_p": 1.0
       },
-      "pricing": null
+      "pricing": null,
+      "step_limit": 100
     },
     "dataset_abbr": "automationbench",
     "n_attempts": 1,
